@@ -13,3 +13,7 @@ O primeiro passo para iniciar os testes foi definir qual OPC utilizar. Após an�
 	+ Utilizado a versão [EX Demo](https://www.kepware.com/en-us/products/kepserverex/)
 2. Prosys OPC UA Simulation Server
 	+ Utilizado a versão [3.1.6-192](https://downloads.prosysopc.com/opc-ua-simulation-server-downloads.php)
+	
+O nosso [Nodered](https://nodered.org/) está na versão 0.19.5.
+
+O node **OPC** que utilizamos foi [node-red-contrib-iiot-opcua](https://flows.nodered.org/node/node-red-contrib-iiot-opcua).
