@@ -3,7 +3,7 @@
 
 ## Objetivo
 
-O presente artigo teve como objetivo documentar os teste de comunicação realizado entre um servidor OPC e o NodeRed.
+O projeto tem como objetivo documentar os testes de comunicação realizado entre um servidor OPC e o NodeRed.
 
 ## Desenvolvimento
 
@@ -17,3 +17,5 @@ O primeiro passo para iniciar os testes foi definir qual OPC utilizar. Após an�
 O nosso [Nodered](https://nodered.org/) está na versão 0.19.5.
 
 O node **OPC** que utilizamos foi [node-red-contrib-iiot-opcua](https://flows.nodered.org/node/node-red-contrib-iiot-opcua).
+
+### Configuração Servidor
