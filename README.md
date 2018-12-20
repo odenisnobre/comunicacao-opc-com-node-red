@@ -18,4 +18,10 @@ O nosso [Nodered](https://nodered.org/) está na versão 0.19.5.
 
 O node **OPC** que utilizamos foi [node-red-contrib-iiot-opcua](https://flows.nodered.org/node/node-red-contrib-iiot-opcua).
 
+Após configurado os servidores OPCs e instalado o node OPC, vamos às configurações:
 
+1. Configuração/uso Kepserver
+	Foi configurado um canal e um dispositivo de teste(modo simulador) no Kepserver conforme imagens:
+	<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-03.jpg"/></br>
+	<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-04.jpg"/></br>
+	<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-05.jpg"/></br>
