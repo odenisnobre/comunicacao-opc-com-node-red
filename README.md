@@ -3,7 +3,7 @@
 
 ## Objetivo
 
-O projeto tem como objetivo documentar os testes de comunicação realizado entre um servidor OPC e o NodeRed.
+> *O projeto tem como objetivo documentar os testes de comunicação realizado entre um servidor OPC e o NodeRed.*
 
 ## Desenvolvimento
 
@@ -39,5 +39,5 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 		Com essas configurações de acesso que podem ser local ou remoto, conforme mostrado acima, temos condições de configurar o NodeRed.
 		
 2. **Uso**
-	+ Com o *0node OPC* devidamente instalado prosseguiremos com as configurações do NodeRed.
+	+ Com o *node OPC* devidamente instalado prosseguiremos com as configurações do NodeRed.
 		- arsfasfsaf
