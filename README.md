@@ -40,5 +40,9 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 		No meu caso irei usar as configurações 	```opc.tcp://192.168.50.130:49370```
 		
 2. **Uso**
-	* Com o *node OPC* devidamente instalado prosseguiremos com as configurações do NodeRed.
-		- arsfasfsaf
+	Com o *node OPC* devidamente instalado prosseguiremos com as configurações do NodeRed.
+	* **Leitura**:
+		Para fazer a leitura de um valor vamos usar a seguinte estrutura:
+			<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-12.jpg"/></br>
+				+ 1. 
+	
