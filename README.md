@@ -68,7 +68,12 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 				<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-19.jpg"/></br>
 				
 ## Prosys OPC UA Simulation Server
-	O Prosys por ser um simulador já possui sua estrutura de tag e configuração já definida ficando pronto pra uso.  
+
++ O Prosys por ser um simulador já possui sua estrutura de tag e configuração já definida ficando pronto pra uso.  
 	<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-07.jpg"/></br>
++ Como foi dito anteriormente o que tem que se atentar é o caminho de conexão do OPC, neste caso é ```OPCUA/SimulationServer```:  
+	<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-08.jpg"/></br>
+	
+	
 				
 					
