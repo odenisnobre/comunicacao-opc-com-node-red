@@ -79,8 +79,8 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 		
 2. **Uso**
 	+ A forma de uso de leitura e escrita do simulador segue o mesmo padrão do Kepserver, visto que as tags já estão mapeadas.
-	+ Só tem que se atentar na configuração do servidor OPC no NodeRed ficando o Endpoint ```opc.tcp://192.168.50.130:53530/OPCUA/SimulationServer```:  
-		img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-20.jpg"/></br>  
+	+ Só tem que se atentar na configuração do servidor OPC no NodeRed ficando o Endpoint ```opc.tcp://192.168.50.130:53530/OPCUA/SimulationServer```:
+		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-20.jpg"/></br>  
 	+ As configurações do nodes são iguais.
 	
 ## Conclusão
