@@ -69,10 +69,31 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 				
 ## Prosys OPC UA Simulation Server
 
-+ O Prosys por ser um simulador já possui sua estrutura de tag e configuração já definida ficando pronto pra uso.  
-	<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-07.jpg"/></br>
-+ Como foi dito anteriormente o que tem que se atentar é o caminho de conexão do OPC, neste caso é ```OPCUA/SimulationServer```:  
-	<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-08.jpg"/></br>
+1. **Configuração**
+	+ O Prosys por ser um simulador já possui sua estrutura de tag e configuração já definida ficando pronto pra uso.  
+		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-07.jpg"/></br>
+	+ Como foi dito anteriormente o que tem que se atentar é o caminho de conexão do OPC, neste caso é ```OPCUA/SimulationServer```:  
+		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-08.jpg"/></br>
+	+ Os tag são definidos na configuração abaixo:  
+		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-09.jpg"/></br>
+		
+2. **Uso**
+	+ A forma de uso de leitura e escrita do simulador segue o mesmo padrão do Kepserver, visto que as tags já estão mapeadas.
+	+ Só tem que se atentar na configuração do servidor OPC no NodeRed ficando o Endpoint ```opc.tcp://192.168.50.130:53530/OPCUA/SimulationServer```:  
+		img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-20.jpg"/></br>  
+	+ As configurações do nodes são iguais.
+	
+## Conclusão
+
+Com este testes de uso do node OPC chegamos a conclusão que o NodeRed atende super bem a demandas e configurações que envolvem *automação industrial*. Com isto se torna um aliado nas demandas
+da indútria 4.0 e conceito de **iiot**.
+Em ambientes de automação existem vários protocolos de ocmunicação e entre ele o que mais estã difundido nos ambientes industriais são basicamenteo o Modbus, seja TCP ou Serial, e o OPC. O NodeRed
+tendo interface com estes protocolos abre um mundo de possibilidades de conectividade com várias aplicações.
+
+
+## Help
+
+Caso precisem te ajuda ou tenham alguma sugestão, deixe seu comentário [Aqui](https://github.com/dedynobre/comunicacao-opc-com-node-red/issues).
 	
 	
 				
