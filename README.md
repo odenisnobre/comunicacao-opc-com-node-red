@@ -63,5 +63,7 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 			<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-13.jpg"/></br>
 			* (1) determina a frequência de leitura da tag OPC. Além disso, na outra aba temos o caminho completo da tag.  
 				<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-15.jpg"/></br>
+			* (2) é o node de escrita OPC.
+				<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-19.jpg"/></br>
 				
 					
