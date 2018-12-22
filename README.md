@@ -67,4 +67,8 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 			* (2) é o node de escrita OPC.  
 				<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-19.jpg"/></br>
 				
+## Prosys OPC UA Simulation Server
+	O Prosys por ser um simulador já possui sua estrutura de tag e configuração já definida ficando pronto pra uso.  
+	<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-07.jpg"/></br>
+				
 					
