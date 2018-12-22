@@ -46,4 +46,11 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 			<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-12.jpg"/></br>
 			* (1) determina a frequência de leitura da tag OPC. Além disso, na outra aba temos o caminho completo da tag.  
 				<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-15.jpg"/></br>
+			* (2.1) node onde é feito o modo de operação(leitura, escrita, etc):
+				<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-14.jpg"/></br>
+			* (2.2) configuração do servidor OPC. Onde é definido o Endpoint, que no nosso caso é ```opc.tcp://192.168.50.130:49370/Kepware.KEPServerEnterprise.V5```. Estas configurações estão
+				conforme mostrado anteriormente.
+				<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-17.jpg"/></br>
+				
+				
 					
