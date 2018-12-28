@@ -1,9 +1,9 @@
-# Teste de Comunicação entre um servidor OPC e NodeRed
+# Teste de Comunicação entre um servidor OPC e Node-Red
 
 
 ## Objetivo
 
-> *O projeto tem como objetivo documentar os testes de comunicação realizado entre um servidor OPC e o NodeRed.*
+> *O projeto tem como objetivo documentar os testes de comunicação realizado entre um servidor OPC e o Node-Red.*
 
 ## Desenvolvimento
 
@@ -14,7 +14,7 @@ O primeiro passo para iniciar os testes foi definir qual OPC utilizar. Após an�
 2. Prosys OPC UA Simulation Server
 	+ Utilizado a versão [3.1.6-192](https://downloads.prosysopc.com/opc-ua-simulation-server-downloads.php)
 	
-O nosso [Nodered](https://nodered.org/) está na versão 0.19.5.
+O nosso [Node-red](https://nodered.org/) está na versão 0.19.5.
 
 O node **OPC** que utilizamos foi [node-red-contrib-iiot-opcua](https://flows.nodered.org/node/node-red-contrib-iiot-opcua).
 
@@ -27,20 +27,20 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-03.jpg"/>
 		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-04.jpg"/>
 		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-05.jpg"/>
-	+ Abrindo o modo **Client** do Kepserver temos as informações e estrutura que utilizaremos no NodeRed:
+	+ Abrindo o modo **Client** do Kepserver temos as informações e estrutura que utilizaremos no Node-Red:
 		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-06.jpg"/></br>
-		1. **Kepware.KEPServerEnterprise.V5**: este é o nome que deverá ser configurado no node do NodeRed.
+		1. **Kepware.KEPServerEnterprise.V5**: este é o nome que deverá ser configurado no node do Node-Red.
 		2. Mostra o nome do canal com o dispositivo.
-		3. Identifica o caminho completo da *tag* OPC que será linkado no NodeRed para leitura ou escrita.
+		3. Identifica o caminho completo da *tag* OPC que será linkado no Node-Red para leitura ou escrita.
 	+ As configurações de comunicação e acesso a sistemas externos são configurados conforme imagem abaixo:
 		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-10.jpg"/></br>
 		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-11.jpg"/></br>
 		
-		Com essas configurações de acesso que podem ser local ou remoto, conforme mostrado acima, temos condições de configurar o NodeRed.
+		Com essas configurações de acesso que podem ser local ou remoto, conforme mostrado acima, temos condições de configurar o Node-Red.
 		No meu caso irei usar as configurações 	```opc.tcp://192.168.50.130:49370```
 		
 2. **Uso**  
-	+ Com o *node OPC* devidamente instalado prosseguiremos com as configurações do NodeRed.  
+	+ Com o *node OPC* devidamente instalado prosseguiremos com as configurações do Node-Red.  
 	+ **Leitura**:  
 		+ Para fazer a leitura de um valor vamos usar a seguinte estrutura:  
 			<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-12.jpg"/></br>
@@ -52,7 +52,7 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 				conforme mostrado anteriormente. O campo **Name** é bom preencher com o nome da fonte de dados para ficar mais facil identificar caso tenha mais de um conexão OPC.  
 				<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-17.jpg"/></br>
 			* (3) resposta da comunicação.
-			* (4) retorna o valor recebido no console do NodeRed(debug).
+			* (4) retorna o valor recebido no console do Node-Red(debug).
 			* (5) como vimos no item 1, podemos listar quais tag iremos ler. Estes valores retorna um *array* de x posições. Então para usá-lo temos que 'pegar' o índice do array que necessitamos.
 				A estrutura de retorno que vai, por exemplo, pro *debug* é a seguinte ```msg.payload[0].value```. Está desta forma porque selecionamos somente um item para leitura.
 				O componente trend do dashboard não tem como personalizar a mensagem que é recebida, então ele recebe os dados somente no msg.payload. Este node converte ```msg.payload[0].value```
@@ -79,15 +79,15 @@ Após configurado os servidores OPCs e instalado o node OPC, vamos às configura
 		
 2. **Uso**
 	+ A forma de uso de leitura e escrita do simulador segue o mesmo padrão do Kepserver, visto que as tags já estão mapeadas.
-	+ Só tem que se atentar na configuração do servidor OPC no NodeRed ficando o Endpoint ```opc.tcp://192.168.50.130:53530/OPCUA/SimulationServer```:
+	+ Só tem que se atentar na configuração do servidor OPC no Node-Red ficando o Endpoint ```opc.tcp://192.168.50.130:53530/OPCUA/SimulationServer```:
 		<img src="https://github.com/dedynobre/comunicacao-opc-com-node-red/blob/master/images/nodered-opc-20.jpg"/></br>  
 	+ As configurações do nodes são iguais.
 	
 ## Conclusão
 
-Com este testes de uso do node OPC chegamos a conclusão que o NodeRed atende super bem a demandas e configurações que envolvem *automação industrial*. Com isto se torna um aliado nas demandas
+Com este testes de uso do node OPC chegamos a conclusão que o Node-Red atende super bem a demandas e configurações que envolvem *automação industrial*. Com isto se torna um aliado nas demandas
 da indútria 4.0 e conceito de **iiot**.
-Em ambientes de automação existem vários protocolos de ocmunicação e entre ele o que mais estã difundido nos ambientes industriais são basicamenteo o Modbus, seja TCP ou Serial, e o OPC. O NodeRed
+Em ambientes de automação existem vários protocolos de ocmunicação e entre ele o que mais estã difundido nos ambientes industriais são basicamenteo o Modbus, seja TCP ou Serial, e o OPC. O Node-Red
 tendo interface com estes protocolos abre um mundo de possibilidades de conectividade com várias aplicações.
 
 
