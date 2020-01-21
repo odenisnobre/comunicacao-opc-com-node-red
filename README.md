@@ -1,5 +1,3 @@
-# Teste de Comunicação entre um servidor OPC e Node-Red
-
 
 ## Objetivo
 
