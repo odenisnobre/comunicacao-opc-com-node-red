@@ -1,10 +1,3 @@
-
-## Objetivo
-
-> *O projeto tem como objetivo documentar os testes de comunicação realizado entre um servidor OPC e o Node-Red.*
-
-
-
 <h1 align="center">
 <br>
 Comunicação OPC com Node-Red
